@@ -22,8 +22,11 @@ app.get("/search/:id", function (req, res) {
         // let result = (JSON.stringify(searchResults))
         res.send(searchResults);
     })
-});
+});app.get("/channel/:id", function (req, res) {
 
+      res.send(req.params);
+
+});
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function () {
