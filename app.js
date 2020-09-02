@@ -4,7 +4,7 @@ const app = express()
 const cors = require('cors')
 const ytdl = require('ytdl-core')
 
-app.get('/api/hello', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Hello World!')
 })
 
