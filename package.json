@@ -1,0 +1,26 @@
+{
+  "name": "ytsr-api",
+  "version": "1.0.0",
+  "description": "Simple ytsr api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atikur-rabbi/ytsr-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atikur-rabbi/ytsr-api/issues"
+  },
+  "homepage": "https://github.com/atikur-rabbi/ytsr-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ytdl-core": "^3.2.2",
+    "ytsr": "^0.1.21"
+  }
+}
