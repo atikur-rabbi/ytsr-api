@@ -2,23 +2,27 @@ const ytsr = require('ytsr');
 let filter;
 ytsr.do_warn_deprecate = false;
 
-let sResult = "some val";
+ let sResult = "some val";
 let searchResults = [];
 var lavel = "github";
 
- ytsr(lavel, function (err, searchResults) {
+ytsr(lavel, function (err, searchResults) {
     if (err) throw err;
     sResult = JSON.stringify(searchResults)
     return searchResults;
   })
 
-async function testAsync() {
- return "hello";
-}
  
-console.log(sResult)
-console.log(ytsr(lavel));
-console.log(testAsync());
+let sResult2 = ytsr(lavel);
+sResult2.then(function(result) {
+  // console.log(result); // "normalReturn"
+});
+console.log(sResult2)
+// console.log(ytsr(lavel));
+
+
+
+
 
 // ytsr.getFilters('github', function(err, filters) {
 
