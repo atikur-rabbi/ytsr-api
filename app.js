@@ -8,6 +8,9 @@ app.get('/api', (req, res) => {
     res.send('Hello World!')
 })
 
+app.get("/search/:id", function(req, res) {
+    res.send(req.params);
+  });
 
 app.use(express.static(__dirname + '/public'));
 

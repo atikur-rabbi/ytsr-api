@@ -8,8 +8,7 @@ var lavel = "github";
 
 ytsr(lavel, function (err, searchResults) {
     if (err) throw err;
-    sResult = JSON.stringify(searchResults)
-    return searchResults;
+   console.log(JSON.stringify(searchResults))
   })
 
  
